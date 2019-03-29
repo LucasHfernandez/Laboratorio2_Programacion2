@@ -35,10 +35,19 @@ namespace ejercicio13
 
         public static double BinarioDecimal(string binario)
         {
-            double numero;
-            int i;
+            double numero = 0;
+            int i = 0;
 
-            while(binario != "")
+            do
+            {
+                if(binario[i] == '1')
+                {
+                    numero = numero + Math.Pow(1, i + 1);
+                }
+
+                i++;
+
+            } while (binario[i] != '\n');
 
 
             return numero;
