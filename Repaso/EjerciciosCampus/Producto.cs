@@ -41,7 +41,7 @@ namespace EjerciciosCampus
         {
             string cadena = "";
 
-            cadena = "El producto es: " + p.marca + "\nEl precio es: " + p.precio + "Codigo de barra: " + p.codigoDeBarras;
+            cadena = "\n\nEl producto es: " + p.marca + "\nEl precio es: " + p.precio + "\nCodigo de barra: " + p.codigoDeBarras;
 
             return cadena;
         }

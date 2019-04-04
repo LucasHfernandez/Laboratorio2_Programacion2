@@ -33,15 +33,20 @@ namespace EjerciciosCampus
             string mensaje = "";
             int i;
 
-            mensaje = "Ubicacion: " + e.ubicacionEstante;
+            mensaje = "\n\nUbicacion: " + e.ubicacionEstante;
 
-            for(i = 0; i < e.ubicacionEstante; i++)
+            for(i = 0; i < e.productos.Length; i++)
             {
-                if(e.ubicacionEstante == i)
+                if (!Object.ReferenceEquals(e.productos,null))
                 {
-                    cadena = "El/los producto/s es/son: " + e.productos[i];
-                    break;
+                    cadena += Producto.MostrarProducto(e.productos[i]);
                 }
+                    
+            }
+
+            if(!Object.ReferenceEquals(cadena, ""))
+            {
+                cadena = cadena + mensaje;
             }
             
             return cadena;
