@@ -1,0 +1,2 @@
+D:\VisualStudio\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csprojAssemblyReference.cache
+D:\VisualStudio\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csproj.CoreCompileInputs.cache

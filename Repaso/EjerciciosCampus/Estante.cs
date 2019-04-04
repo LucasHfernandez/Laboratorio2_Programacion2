@@ -1,0 +1,122 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EjerciciosCampus
+{
+    class Estante
+    {
+        private int ubicacionEstante;
+        private Producto[] productos;
+
+        private Estante(int capacidad)
+        {
+            productos = new Producto[capacidad];
+        }
+
+        public Estante(int capacidad, int ubicacion) : this(capacidad)
+        {
+            this.ubicacionEstante = ubicacion;
+            
+        }
+
+        public Producto[] GetProductos()
+        {
+            return productos;
+        }
+
+        public static string MostrarEstante(Estante e)
+        {
+            string cadena = "";
+            string mensaje = "";
+            int i;
+
+            mensaje = "Ubicacion: " + e.ubicacionEstante;
+
+            for(i = 0; i < e.ubicacionEstante; i++)
+            {
+                if(e.ubicacionEstante == i)
+                {
+                    cadena = "El/los producto/s es/son: " + e.productos[i];
+                }
+            }
+            
+            return cadena;
+        }
+
+
+        public static bool operator ==(Estante e, Producto p)
+        {
+            bool valor = false;
+            int i;
+            string marcaProducto;
+            string marcaEstante;
+
+            marcaProducto = p.GetMarca();
+
+            for(i = 0; i < e.productos.Length; i++)
+            {
+                marcaEstante = e.productos[i].GetMarca();
+
+                if(marcaProducto == marcaEstante)
+                {
+                    valor = true;
+                    break;
+                }
+
+            }
+
+            return valor;
+        }
+
+        public static bool operator !=(Estante e, Producto p)
+        {
+            bool valor = false;
+            int i;
+            string marcaProducto;
+            string marcaEstante;
+
+            marcaProducto = p.GetMarca();
+
+            for (i = 0; i < e.productos.Length; i++)
+            {
+                marcaEstante = e.productos[i].GetMarca();
+
+                if (marcaProducto != marcaEstante)
+                {
+                    valor = true;
+                    break;
+                }
+
+            }
+
+            return valor;
+        }
+
+
+        public static bool operator +(Estante e, Producto p)
+        {
+            bool valor = false;
+            int i;
+
+            if(!(e == p))
+            {
+                for(i = 0; i < e.productos.Length; i++)
+                {
+
+                    if(Object.ReferenceEquals(e.productos[i], null) == null)
+                    {
+                        valor = true;
+                        e.productos[i] = p;
+                        break;
+                    }
+                  
+                }
+            }
+
+            return valor;
+        }
+    }
+}
