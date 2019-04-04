@@ -1,2 +1,9 @@
 D:\VisualStudio\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csprojAssemblyReference.cache
 D:\VisualStudio\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csproj.CoreCompileInputs.cache
+D:\varios\Repaso\EjerciciosCampus\bin\Debug\EjerciciosCampus.exe.config
+D:\varios\Repaso\EjerciciosCampus\bin\Debug\EjerciciosCampus.exe
+D:\varios\Repaso\EjerciciosCampus\bin\Debug\EjerciciosCampus.pdb
+D:\varios\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csprojAssemblyReference.cache
+D:\varios\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.csproj.CoreCompileInputs.cache
+D:\varios\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.exe
+D:\varios\Repaso\EjerciciosCampus\obj\Debug\EjerciciosCampus.pdb

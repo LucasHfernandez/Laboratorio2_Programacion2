@@ -12,10 +12,10 @@ namespace EjerciciosCampus
         private string marca;
         private float precio;
 
-        public Producto(string codigoDeBarras, string marca, float precio)
+        public Producto(string marca, string codigoDeBarras, float precio)
         {
-            this.codigoDeBarras = codigoDeBarras;
             this.marca = marca;
+            this.codigoDeBarras = codigoDeBarras;
             this.precio = precio;
         }
 

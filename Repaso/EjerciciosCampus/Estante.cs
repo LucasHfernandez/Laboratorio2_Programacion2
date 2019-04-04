@@ -40,6 +40,7 @@ namespace EjerciciosCampus
                 if(e.ubicacionEstante == i)
                 {
                     cadena = "El/los producto/s es/son: " + e.productos[i];
+                    break;
                 }
             }
             
@@ -58,12 +59,15 @@ namespace EjerciciosCampus
 
             for(i = 0; i < e.productos.Length; i++)
             {
-                marcaEstante = e.productos[i].GetMarca();
-
-                if(marcaProducto == marcaEstante)
+                if(!Object.ReferenceEquals(e.productos[i], null))
                 {
-                    valor = true;
-                    break;
+                    marcaEstante = e.productos[i].GetMarca();
+
+                    if (marcaProducto == marcaEstante)
+                    {
+                        valor = true;
+                        break;
+                    }
                 }
 
             }
@@ -82,14 +86,16 @@ namespace EjerciciosCampus
 
             for (i = 0; i < e.productos.Length; i++)
             {
-                marcaEstante = e.productos[i].GetMarca();
-
-                if (marcaProducto != marcaEstante)
+                if (Object.ReferenceEquals(e.productos[i], null))
                 {
-                    valor = true;
-                    break;
-                }
+                    marcaEstante = e.productos[i].GetMarca();
 
+                    if (marcaProducto != marcaEstante)
+                    {
+                        valor = true;
+                        break;
+                    }
+                }
             }
 
             return valor;
@@ -106,7 +112,7 @@ namespace EjerciciosCampus
                 for(i = 0; i < e.productos.Length; i++)
                 {
 
-                    if(Object.ReferenceEquals(e.productos[i], null) == null)
+                    if(Object.ReferenceEquals(e.productos[i], null))
                     {
                         valor = true;
                         e.productos[i] = p;
@@ -117,6 +123,29 @@ namespace EjerciciosCampus
             }
 
             return valor;
+        }
+
+        public static Estante operator -(Estante e, Producto p)
+        {
+            
+            int i;
+
+            if (e == p)
+            {
+                for (i = 0; i < e.productos.Length; i++)
+                {
+
+                    if (Object.ReferenceEquals(e.productos[i], p))
+                    {
+                        e.productos[i] = null;
+
+                        break;
+                    }
+
+                }
+            }
+
+            return e;
         }
     }
 }
