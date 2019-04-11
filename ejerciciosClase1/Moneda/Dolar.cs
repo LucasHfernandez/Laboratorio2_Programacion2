@@ -4,27 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejercicio20
+namespace Moneda
 {
-    class Pesos
+    public class Dolar
     {
         private double cantidad;
         private static float cotizRespectoDolar;
 
-        static Pesos()
+        static Dolar()
         {
-            cotizRespectoDolar = 42.99f;
+            cotizRespectoDolar = 1;
         }
 
-        public Pesos(double cantidad)
+        public Dolar(double cantidad)
         {
             this.cantidad = cantidad;
         }
 
-        public Pesos(double cantidad, float cotizacion)
+        public Dolar(double cantidad, float cotizacion)
         {
             this.cantidad = cantidad;
-            cotizRespectoDolar = cotizacion;
+            cotizRespectoDolar = cotizacion;       
         }
 
         public double GetCantidad()
@@ -37,38 +37,36 @@ namespace ejercicio20
             return cotizRespectoDolar;
         }
 
-
-        public static explicit operator Euro(Pesos p)
+        public static explicit operator Euro(Dolar d)
         {
-            Dolar valorDolar = (Dolar)p;
             float cotiz;
             double resultado;
-
-            cotiz = Pesos.GetCotizacion();
-            resultado = valorDolar.GetCantidad() * cotiz;
+            
+            cotiz = Euro.GetCotizacion();
+            resultado = d.cantidad / cotiz;
 
             Euro result = new Euro(resultado);
 
             return result;
         }
 
-        public static explicit operator Dolar(Pesos p)
+        public static explicit operator Pesos(Dolar d)
         {
             float cotiz;
             double resultado;
 
             cotiz = Pesos.GetCotizacion();
-            resultado = p.cantidad * cotiz;
+            resultado = d.cantidad / cotiz;
 
-            Dolar result = new Dolar(resultado);
+            Pesos result = new Pesos(resultado);
 
             return result;
         }
 
-        public static implicit operator Pesos(double p)
+        public static implicit operator Dolar(double d)
         {
-            double cantidad = p * cotizRespectoDolar;
-            Pesos valor = new Pesos(cantidad);
+            double cantidad = d * cotizRespectoDolar;
+            Dolar valor = new Dolar(cantidad);
 
             return valor;
         }

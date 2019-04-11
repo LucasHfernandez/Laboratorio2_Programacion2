@@ -1,0 +1,13 @@
+D:\varios\ejerciciosClase1\ejercicio23\bin\Debug\ejercicio23.exe.config
+D:\varios\ejerciciosClase1\ejercicio23\bin\Debug\ejercicio23.exe
+D:\varios\ejerciciosClase1\ejercicio23\bin\Debug\ejercicio23.pdb
+D:\varios\ejerciciosClase1\ejercicio23\bin\Debug\Moneda.dll
+D:\varios\ejerciciosClase1\ejercicio23\bin\Debug\Moneda.pdb
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.csprojAssemblyReference.cache
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.Form1.resources
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.Properties.Resources.resources
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.csproj.GenerateResource.cache
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.csproj.CoreCompileInputs.cache
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.csproj.CopyComplete
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.exe
+D:\varios\ejerciciosClase1\ejercicio23\obj\Debug\ejercicio23.pdb

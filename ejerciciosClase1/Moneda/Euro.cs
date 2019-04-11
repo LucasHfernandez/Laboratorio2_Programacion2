@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejercicio20
+namespace Moneda
 {
-    class Euro
+    public class Euro
     {
         private double cantidad;
         private static float cotizRespectoDolar;
@@ -44,7 +44,7 @@ namespace ejercicio20
             float cotiz;
             double resultado;
 
-            cotiz = Euro.GetCotizacion();
+            cotiz = Pesos.GetCotizacion();
             resultado = valorDolar.GetCantidad() * cotiz;
 
             Pesos result = new Pesos(resultado);

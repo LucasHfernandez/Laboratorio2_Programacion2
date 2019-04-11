@@ -5,3 +5,6 @@ D:\varios\ejerciciosClase1\ejercicio20\obj\Debug\ejercicio20.csprojAssemblyRefer
 D:\varios\ejerciciosClase1\ejercicio20\obj\Debug\ejercicio20.csproj.CoreCompileInputs.cache
 D:\varios\ejerciciosClase1\ejercicio20\obj\Debug\ejercicio20.exe
 D:\varios\ejerciciosClase1\ejercicio20\obj\Debug\ejercicio20.pdb
+D:\varios\ejerciciosClase1\ejercicio20\bin\Debug\Moneda.dll
+D:\varios\ejerciciosClase1\ejercicio20\bin\Debug\Moneda.pdb
+D:\varios\ejerciciosClase1\ejercicio20\obj\Debug\ejercicio20.csproj.CopyComplete
