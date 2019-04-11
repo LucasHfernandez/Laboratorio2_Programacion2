@@ -13,7 +13,7 @@ namespace ejercicio20
 
         static Euro()
         {
-            cotizRespectoDolar = 1.16f;
+            cotizRespectoDolar = 1.13f;
         }
 
         public Euro(double cantidad)
@@ -58,7 +58,7 @@ namespace ejercicio20
             double resultado;
 
             cotiz = Euro.GetCotizacion();
-            resultado = e.cantidad / cotiz;
+            resultado = e.cantidad * cotiz;
 
             Dolar result = new Dolar(resultado);
 

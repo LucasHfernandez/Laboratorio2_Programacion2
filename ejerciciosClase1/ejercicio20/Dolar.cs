@@ -43,7 +43,7 @@ namespace ejercicio20
             double resultado;
             
             cotiz = Euro.GetCotizacion();
-            resultado = d.cantidad * cotiz;
+            resultado = d.cantidad / cotiz;
 
             Euro result = new Euro(resultado);
 
@@ -56,7 +56,7 @@ namespace ejercicio20
             double resultado;
 
             cotiz = Pesos.GetCotizacion();
-            resultado = d.cantidad * cotiz;
+            resultado = d.cantidad / cotiz;
 
             Pesos result = new Pesos(resultado);
 

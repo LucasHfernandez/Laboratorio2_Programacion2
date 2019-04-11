@@ -13,7 +13,7 @@ namespace ejercicio20
 
         static Pesos()
         {
-            cotizRespectoDolar = 38.33f;
+            cotizRespectoDolar = 42.99f;
         }
 
         public Pesos(double cantidad)
