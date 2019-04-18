@@ -12,7 +12,7 @@ namespace ejercicio31
         {
             Console.Title = "Ejercicio Nro 31";
 
-
+            Negocio negocio1 = new Negocio("")
 
             Console.ReadKey();
         }

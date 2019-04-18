@@ -24,6 +24,14 @@ namespace ejercicio31
             }
         }
 
+        public int ClientesPendientes
+        {
+            get
+            {
+                return clientes.Count();
+            }
+        }
+
         private Negocio()
         {
             caja = new PuestoAtencion(Puesto.Caja1);
@@ -41,7 +49,7 @@ namespace ejercicio31
             
            foreach(Cliente auxiliar in n.clientes)
            {
-                if(auxiliar.Numero == c.Numero)
+                if(auxiliar == c)
                 {
                     valor = true;
                     break;
@@ -53,15 +61,53 @@ namespace ejercicio31
 
         public static bool operator !=(Negocio n, Cliente c)
         {
-            bool valor = false;
+            bool valor = true;
 
             foreach (Cliente auxiliar in n.clientes)
             {
-                if (auxiliar.Numero != c.Numero)
+                if (auxiliar == c)
                 {
-                    valor = true;
+                    valor = false;
                     break;
                 }
+            }
+
+            return valor;
+        }
+
+        public static bool operator +(Negocio n, Cliente c)
+        {
+            bool valor = false;
+
+            if(n == c)
+            {
+                n.clientes.Enqueue(c);
+                valor = true; 
+            }
+
+            return valor;
+        }
+
+        public static bool operator -(Negocio n, Cliente c)
+        {
+            bool valor = false;
+
+            if (n == c)
+            {
+                n.clientes.Dequeue();
+                valor = true;
+            }
+
+            return valor;
+        }
+
+        public static bool operator ~(Negocio n)
+        {
+            bool valor = false;
+
+            if(n.caja.Atender(n.Cliente))
+            {
+                valor = true;
             }
 
             return valor;
