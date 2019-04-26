@@ -1,0 +1,10 @@
+D:\varios\Fernandez.Lucas\VistaConsola\bin\Debug\VistaConsola.exe.config
+D:\varios\Fernandez.Lucas\VistaConsola\bin\Debug\VistaConsola.exe
+D:\varios\Fernandez.Lucas\VistaConsola\bin\Debug\VistaConsola.pdb
+D:\varios\Fernandez.Lucas\VistaConsola\bin\Debug\Entidades.dll
+D:\varios\Fernandez.Lucas\VistaConsola\bin\Debug\Entidades.pdb
+D:\varios\Fernandez.Lucas\VistaConsola\obj\Debug\VistaConsola.csprojAssemblyReference.cache
+D:\varios\Fernandez.Lucas\VistaConsola\obj\Debug\VistaConsola.csproj.CoreCompileInputs.cache
+D:\varios\Fernandez.Lucas\VistaConsola\obj\Debug\VistaConsola.csproj.CopyComplete
+D:\varios\Fernandez.Lucas\VistaConsola\obj\Debug\VistaConsola.exe
+D:\varios\Fernandez.Lucas\VistaConsola\obj\Debug\VistaConsola.pdb

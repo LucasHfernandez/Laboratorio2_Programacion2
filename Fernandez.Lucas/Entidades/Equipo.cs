@@ -34,7 +34,7 @@ namespace Entidades
             jugadores = new List<Jugador>();
         }
 
-        public Equipo(string nombre)
+        public Equipo(string nombre) : this()
         {
             this.nombre = nombre;
         }

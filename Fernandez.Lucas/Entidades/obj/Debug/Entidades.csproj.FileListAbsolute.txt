@@ -1,2 +1,6 @@
 D:\varios\Fernandez.Lucas\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
 D:\varios\Fernandez.Lucas\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\varios\Fernandez.Lucas\Entidades\bin\Debug\Entidades.dll
+D:\varios\Fernandez.Lucas\Entidades\bin\Debug\Entidades.pdb
+D:\varios\Fernandez.Lucas\Entidades\obj\Debug\Entidades.dll
+D:\varios\Fernandez.Lucas\Entidades\obj\Debug\Entidades.pdb
