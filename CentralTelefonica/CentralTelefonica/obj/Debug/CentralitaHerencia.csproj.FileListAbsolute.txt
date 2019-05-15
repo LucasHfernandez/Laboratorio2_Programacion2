@@ -1,0 +1,7 @@
+D:\varios\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.exe.config
+D:\varios\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.exe
+D:\varios\CentralTelefonica\CentralTelefonica\bin\Debug\CentralTelefonica.pdb
+D:\varios\CentralTelefonica\CentralTelefonica\obj\Debug\CentralitaHerencia.csprojAssemblyReference.cache
+D:\varios\CentralTelefonica\CentralTelefonica\obj\Debug\CentralitaHerencia.csproj.CoreCompileInputs.cache
+D:\varios\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.exe
+D:\varios\CentralTelefonica\CentralTelefonica\obj\Debug\CentralTelefonica.pdb

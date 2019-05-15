@@ -63,7 +63,7 @@ namespace CentralTelefonica
 
         }
 
-        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
             int duracion = 0;
 
