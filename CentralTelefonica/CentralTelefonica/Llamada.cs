@@ -14,7 +14,7 @@ namespace CentralTelefonica
     }
 
 
-    public class Llamada
+    public abstract class Llamada
     {
         protected float duracion;
         protected string nroDestino;
@@ -51,12 +51,12 @@ namespace CentralTelefonica
             this.nroOrigen = nroOrigen;
         }
 
-        public string Mostrar()
+        protected virtual string Mostrar()
         {
             StringBuilder numeros = new StringBuilder();
 
-            numeros.AppendFormat("\nNumero de Destino: {0} \nNumero de Origen: {1} \nNumero de Duracion: {2}",NroDestino, 
-                                                                                                              NroOrigen, 
+            numeros.AppendFormat("\nNumero de Destino: {0} \nNumero de Origen: {1} \nNumero de Duracion: {2}", NroDestino,
+                                                                                                              NroOrigen,
                                                                                                               Duracion);
 
             return numeros.ToString();
@@ -67,16 +67,47 @@ namespace CentralTelefonica
         {
             int duracion = 0;
 
-            if(llamada1.duracion > llamada2.duracion)
+            if (llamada1.duracion > llamada2.duracion)
             {
                 duracion = 1;
             }
-            else if(llamada1.duracion < llamada2.duracion)
+            else if (llamada1.duracion < llamada2.duracion)
             {
                 duracion = -1;
             }
 
             return duracion;
         }
+
+        public abstract float CostoLlamada
+        {
+            get;
+        }
+
+        public static bool operator ==(Llamada l1, Llamada l2)
+        {
+            bool retorno = false;
+
+            if(l1.Equals(l2) && l1.nroDestino == l2.nroDestino && l1.nroOrigen == l2.nroOrigen)
+            {
+                retorno = true;
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Llamada l1, Llamada l2)
+        {
+            bool retorno = false;
+
+            if (!(l1.Equals(l2)))
+            {
+                retorno = true;
+            }
+
+            return retorno;
+        }
+
+
     }
 }

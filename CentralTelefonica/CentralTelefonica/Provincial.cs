@@ -18,7 +18,12 @@ namespace CentralTelefonica
         }
         protected Franja franjaHoraria;
 
-        public float CostoLlamada
+        public override bool Equals(object obj)
+        {
+            return obj is Provincial;
+        }
+
+        public override float CostoLlamada
         {
             get
             {
@@ -46,7 +51,7 @@ namespace CentralTelefonica
             return resultado;
         }
 
-        public string Mostrar()
+        protected override string Mostrar()
         {
             StringBuilder llamadaProv = new StringBuilder();
 
@@ -63,6 +68,11 @@ namespace CentralTelefonica
         public Provincial(string origen, Franja miFranja, float duracion, string destino) : base(duracion, destino, origen)
         {
             franjaHoraria = miFranja;
+        }
+
+        public string ToString()
+        {
+            return Mostrar();
         }
     }
 }

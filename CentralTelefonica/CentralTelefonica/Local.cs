@@ -10,7 +10,12 @@ namespace CentralTelefonica
     {
         protected float costo;
 
-        public float CostoLlamada
+        public override bool Equals(object obj)
+        {
+            return obj is Local;
+        }
+
+        public override float CostoLlamada
         {
             get
             {
@@ -38,13 +43,18 @@ namespace CentralTelefonica
             this.costo = costo;
         }
 
-        public string Mostrar()
+        protected override string Mostrar()
         {
             StringBuilder llamadaLocal = new StringBuilder();
 
             llamadaLocal.AppendFormat("{0} \n\nEl costo es: {1}", base.Mostrar(), CostoLlamada);
 
             return llamadaLocal.ToString();           
+        }
+
+        public string ToString()
+        {
+            return Mostrar();
         }
     }
 }
