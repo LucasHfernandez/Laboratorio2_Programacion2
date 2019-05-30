@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FrmLlamador
+namespace CentralitaForm
 {
     public partial class FrmLlamador : Form
     {
@@ -16,5 +16,7 @@ namespace FrmLlamador
         {
             InitializeComponent();
         }
+
+        
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("FrmLlamador")]
+[assembly: AssemblyTitle("CentralitaForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("FrmLlamador")]
+[assembly: AssemblyProduct("CentralitaForm")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("37843617-5786-4552-a3a2-4d67d67b3963")]
+[assembly: Guid("9f1b4817-9b39-4907-839a-840aac65cf55")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FrmMenu.Properties
+namespace CentralitaForm.Properties
 {
 
 

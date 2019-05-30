@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CentralTelefonica;
 
-namespace FrmMostrar
+namespace CentralitaForm
 {
-    public partial class Form1 : Form
+    public partial class FrmMenu: Form
     {
-        public Form1()
+        public FrmMenu()
         {
             InitializeComponent();
         }
+
+        public Centralita central = new Centralita();
+
     }
 }

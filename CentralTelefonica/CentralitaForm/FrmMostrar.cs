@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FrmMenu
+namespace CentralitaForm
 {
-    public partial class FrmMenu : Form
+    public partial class FrmMostrar : Form
     {
-        public FrmMenu()
+        public FrmMostrar()
         {
             InitializeComponent();
         }
