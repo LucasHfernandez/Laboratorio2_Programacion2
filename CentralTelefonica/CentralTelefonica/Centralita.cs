@@ -43,6 +43,11 @@ namespace CentralTelefonica
             }
         }
 
+        private void AgregarLlamada(Llamada llamadaNueva)
+        {
+            listaDeLlamadas.Add(llamadaNueva);
+        }
+
         public Centralita()
         {
             listaDeLlamadas = new List<Llamada>();
@@ -104,7 +109,7 @@ namespace CentralTelefonica
             datos.AppendFormat("\n*La ganancia provincial es: {0}", GananciasPorProvincia);
             foreach(Llamada llamada in Llamadas)
             {
-                datos.AppendLine(llamada.Mostrar());
+                datos.AppendLine(llamada.ToString());
             }
             datos.AppendLine("\n\n*************************************************");
 
@@ -114,6 +119,41 @@ namespace CentralTelefonica
         public void OrdenarLlamadas()
         {
             Llamadas.Sort(Llamada.OrdenarPorDuracion);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public static bool operator ==(Centralita c, Llamada llamada)
+        {
+            bool respuesta = false;
+
+            foreach(Llamada llama in c.listaDeLlamadas)
+            {
+                if(llama == llamada)
+                {
+                    respuesta = true;
+                }
+            }
+
+            return respuesta;
+        }
+
+        public static bool operator !=(Centralita c, Llamada llamada)
+        {
+            return (!(c == llamada));
+        }
+
+        public static Centralita operator +(Centralita c, Llamada llamadaNueva)
+        {
+            if(c != llamadaNueva)
+            {
+                c.AgregarLlamada(llamadaNueva);
+            }
+
+            return c;
         }
     }
 }

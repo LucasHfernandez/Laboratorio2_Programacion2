@@ -70,7 +70,7 @@ namespace CentralTelefonica
             franjaHoraria = miFranja;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return Mostrar();
         }

@@ -52,7 +52,7 @@ namespace CentralTelefonica
             return llamadaLocal.ToString();           
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return Mostrar();
         }
