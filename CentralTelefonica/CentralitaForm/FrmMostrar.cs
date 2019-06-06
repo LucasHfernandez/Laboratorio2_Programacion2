@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CentralTelefonica;
 
 namespace CentralitaForm
 {
@@ -15,6 +16,13 @@ namespace CentralitaForm
         public FrmMostrar()
         {
             InitializeComponent();
+        }
+
+        public Centralita centralita;
+
+        public FrmMostrar(Centralita centralita) : this()
+        {
+            this.centralita = centralita;
         }
     }
 }

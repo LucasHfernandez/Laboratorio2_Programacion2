@@ -43,6 +43,7 @@
             this.btnGenerarLlamada.TabIndex = 0;
             this.btnGenerarLlamada.Text = "Generar Llamada";
             this.btnGenerarLlamada.UseVisualStyleBackColor = true;
+            this.btnGenerarLlamada.Click += new System.EventHandler(this.btnGenerarLlamada_Click);
             // 
             // btnFacturacionTotal
             // 
@@ -91,6 +92,7 @@
             this.Controls.Add(this.btnFacturacionTotal);
             this.Controls.Add(this.btnGenerarLlamada);
             this.Name = "FrmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Central Telefónica";
             this.ResumeLayout(false);
 

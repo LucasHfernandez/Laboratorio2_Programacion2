@@ -20,5 +20,10 @@ namespace CentralitaForm
 
         public Centralita central = new Centralita();
 
+        private void btnGenerarLlamada_Click(object sender, EventArgs e)
+        {
+            FrmLlamador nuevaLlamada = new FrmLlamador(central);
+            nuevaLlamada.ShowDialog();
+        }
     }
 }
