@@ -120,7 +120,8 @@ namespace CentralitaForm
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtNroDestino.Text = string.Empty;
+            txtNroDestino.ResetText();
+            txtNroOrigen.ResetText();
         }
     }
 }
