@@ -22,7 +22,7 @@ namespace Entidades
             command.Connection = connection;
         }
 
-        public void Guardar(Persona persona)
+        public static void Guardar(Persona persona)
         {
             String agregar;
 
@@ -33,7 +33,7 @@ namespace Entidades
             command.ExecuteNonQuery();
         }
 
-        public List<Persona>Leer()
+        public static List<Persona>Leer()
         {
             List<Persona> listPersona = new List<Persona>();
             string auxNombre;
@@ -56,7 +56,7 @@ namespace Entidades
             return listPersona;
         }
 
-        public Persona LeerPorId(int id)
+        public static Persona LeerPorId(int id)
         {
             SqlDataReader oDr = command.ExecuteReader();
             string auxNombre;
@@ -82,22 +82,22 @@ namespace Entidades
             return datoPersona;
         }
 
-        public void Modificar(int id, string nombre, string apellido)
+        public static void Modificar(Persona person)
         {
             String modificar;
 
-            modificar = String.Format("UPDATE ID,Nombre,Apellido SET {0} {1} {2} WHERE ID = {3}", id, nombre, apellido, id);
+            modificar = String.Format("UPDATE ID,Nombre,Apellido SET ID = {0} Nombre= {1} Apellido= {2} WHERE ID = {3}", person.Id, person.Nombre, person.Apellido, person.Id);
 
             command.CommandText = modificar;
             connection.Open();
             command.ExecuteNonQuery();
         }
 
-        public void Borrar(int id)
+        public static void Borrar(Persona person)
         {
             String borrar;
 
-            borrar = String.Format("DELETE ID,Nombre,Apellido FROM dbo.Person WHERE ID = {0}", id);
+            borrar = String.Format("DELETE ID,Nombre,Apellido FROM dbo.Person WHERE ID = {0}", person.Id);
 
             command.CommandText = borrar;
             connection.Open();
