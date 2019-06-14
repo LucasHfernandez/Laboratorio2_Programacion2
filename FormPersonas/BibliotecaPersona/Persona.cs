@@ -48,7 +48,8 @@ namespace BibliotecaPersona
 
         public Persona()
         {
-
+            Nombre = " ";
+            Apellido = " ";
         }
 
 
